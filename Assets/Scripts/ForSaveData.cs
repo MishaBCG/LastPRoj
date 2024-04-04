@@ -8,7 +8,7 @@ public class ForSaveData : MonoBehaviour
 {
     public static ForSaveData instance { get; private set; }
 
-    public string playerName;
+    public string playerName { get; set; }
 
     private void Awake()
     {

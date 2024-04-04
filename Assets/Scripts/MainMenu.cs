@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   private string nameEnter { get;  set; }
+   public string nameEnter { get;  private set; }
 
     public void TakeName(string n)
     {
