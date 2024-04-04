@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,5 +11,10 @@ public class MainMenu : MonoBehaviour
     {
         nameEnter = n;
         ForSaveData.instance.playerName = nameEnter;
+    }
+
+    public void Game()
+    {
+        SceneManager.LoadScene(1);
     }
 }
